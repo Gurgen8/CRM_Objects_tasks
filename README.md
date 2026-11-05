@@ -2,7 +2,7 @@
 
 Мини-CRM для строительной компании: постановщик ставит задачи по объектам (стройкам), исполнители берут их в работу и отдают на проверку. Каждая смена статуса записывается в историю.
 
-**Демо:** <!-- DEMO_URL --> _ссылка будет добавлена после деплоя_
+**Демо:** https://crm-objects-tasks-alpha.vercel.app
 
 | Роль        | Email                    | Пароль           |
 |-------------|--------------------------|------------------|
@@ -49,7 +49,7 @@ npm run test:security         # 33 попытки обойти защиту — 
    ```bash
    npx supabase login
    npx supabase link --project-ref <project-ref>
-   npx supabase db push
+   npx supabase db push --remote
    ```
 4. Заполнить `.env.scripts` значениями облачного проекта (Project Settings → API Keys) и выполнить `npm run db:seed`.
 5. Authentication → URL Configuration → Site URL = адрес фронтенда.
